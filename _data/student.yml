@@ -1,0 +1,16 @@
+# This file stores the data about our current students
+# To add a record, refer to the example below.
+#
+# id:                         // this id MUST exist in the member.yml file
+#   - courseId: phd                     // mandatory
+#     title: Evolutionary Game Theory   // mandatory
+#     supervisorIds: oriordan griffith  // optional. Ids MUST exist in the member.yml file. Split ids with single space (if >1 supervisor).
+#     fundingIds: cnpq                  // optional. Ids MUST exist in the funding.yml file. Split ids with single space (if >1 funding).
+#     conclusionYear: 2020              // optional
+
+cardinot:
+  - courseId: phd
+    title: Evolutionary Game Theory
+    supervisorIds: oriordan griffith
+    fundingIds: cnpq
+    conclusionYear: 2020

@@ -1,0 +1,41 @@
+# This file stores the name and contact information of all members of the group.
+# To add a member, refer to the example below.
+#
+# surname:                        // make sure it's a unique id
+#   name: John Doe                // mandatory
+#   email: j@d.com                // optional
+#   orcid: 0000-0000-0000-0000    // optional
+#   gscholar: wuLwX_4AAAAJ        // optional
+#   dblp: 123/1234                // optional
+#   github: johndoe               // optional
+#   linkedin: johndoe             // optional
+#   twitter: johndoe              // optional
+
+cardinot:
+  name: Marcos Cardinot
+  email: marcos.cardinot@nuigalway.ie
+  orcid: 0000-0001-6566-0139
+  gscholar: wuLwX_4AAAAJ
+  dblp: 184/0893
+  github: cardinot
+
+griffith:
+  name: Josephine Griffith
+  email: josephine.griffith@nuigalway.ie
+  gscholar: MeYCar0AAAAJ
+  dblp: 57/2979
+
+oriordan:
+  name: Colm O'Riordan
+  email: colm.oriordan@nuigalway.ie
+  gscholar: 2qi2RgwAAAAJ
+  dblp: 37/6812
+
+hill:
+  name: Seamus Hill
+
+mulvihil:
+  name: Conn Mulvihil
+
+breen:
+  name: Aidan Breen

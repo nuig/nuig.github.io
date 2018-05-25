@@ -1,0 +1,36 @@
+<table id="alumniTable" class="hover">
+  <thead>
+    <tr>
+      <th>End</th>
+      <th>Degree</th>
+      <th>Name</th>
+      <th>Thesis</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% assign members=site.data.alumni %}
+  {% for member in members %}
+    {% assign key=member[0] %}
+    {% assign contact=site.data.member[key] %}
+
+    {% for detail in member[1] %}
+      <tr>
+        <td>{% if detail.conclusionYear %}{{ detail.conclusionYear }}{% else %} -- {% endif %}</td>
+        <td>
+          {% if site.data.course[detail.courseId] %}
+            <div class="tooltip">
+              {{ site.data.course[detail.courseId].degree }}
+              <span class="tooltiptext">
+                {{ site.data.course[detail.courseId].title }}
+              </span>
+            </div>
+          {% elsif detail.courseId %}{{ detail.courseId }}{% else %} -- {% endif %}
+        </td>
+        <td>{% if contact.name %}{{ contact.name }}{% else %} -- {% endif %}</td>
+        <td>{% include student_details.html %}</td>
+      </tr>
+    {% endfor %}
+
+  {% endfor %}
+  </tbody>
+</table>
