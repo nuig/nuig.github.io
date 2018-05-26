@@ -1,5 +1,5 @@
 <!-- Load jQuery -->
-<script src="//code.jquery.com/jquery-{{ site.jquery_version }}.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/{{ site.jquery_version }}/jquery.min.js"></script>
 
 <!-- Load Common JS -->
 <script src="{{ '/assets/js/common.js' | prepend: site.baseurl | prepend: site.url }}"></script>
@@ -27,8 +27,8 @@
 <!-- Load DataTable <Credit: https://github.com/tomjoht/documentation-theme-jekyll> -->
 {% if page.datatable == true %}
 <!-- Include the standard DataTables bits -->
-<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
-<script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
+<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/{{ site.datatables_version }}/css/jquery.dataTables.min.css">
+<script type="text/javascript" charset="utf8" src="//cdn.datatables.net/{{ site.datatables_version }}/js/jquery.dataTables.js"></script>
 <!-- First, this walks through the tables that occur between ...-begin
      and ...-end and add the "datatable" class to them.
      Then it invokes DataTable's standard initializer
