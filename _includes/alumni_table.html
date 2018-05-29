@@ -18,11 +18,8 @@
         <td>{% if detail.conclusionYear %}{{ detail.conclusionYear }}{% else %} -- {% endif %}</td>
         <td>
           {% if site.data.course[detail.courseId] %}
-            <div class="tooltip">
+            <div alt title="{{ site.data.course[detail.courseId].title }}">
               {{ site.data.course[detail.courseId].degree }}
-              <span class="tooltiptext">
-                {{ site.data.course[detail.courseId].title }}
-              </span>
             </div>
           {% elsif detail.courseId %}{{ detail.courseId }}{% else %} -- {% endif %}
         </td>
