@@ -1,51 +1,50 @@
 ---
 ---
 
-{% if entry.abbr %}
-  {% if site.data.venues[entry.abbr] %}
-    <abbr>[<a href="{{site.data.venues[entry.abbr].url}}" target="_blank">{{entry.abbr}}</a>]</abbr>
-  {% else %}
-    <abbr>[{{entry.abbr}}]</abbr>
-  {% endif %}
-{% endif %}
+{% include bibtex.html %}
 
-<div id="{{entry.key}}">
+<li class="{{ type_tag_class }}" alt title="{{ type_name }}">
+<div class="publication-index">[{{ type_tag }}{{ entry_number }}]</div>
+
+<div id="{{entry.key}}" class="publication-block publication-content">
   {% if entry.type == "thesis" %}
     {{reference}}
   {% else %}
-    <span class="title">{{entry.title}}</span>
-    <span class="author">
+    <span class="publication-block publication-title">{{entry.title}}</span>
+    <span class="publication-block publication-author">
       {% for author in entry.author_array %}
         {% unless forloop.last %}
           {% if author.last == site.scholar.last_name %}
-            <em>{{author.last}}, {{author.first}}</em>,
+            <em>{{author.first}} {{author.last}}</em>,
           {% else %}
             {% if site.data.coauthors[author.last] %}
-              <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.last}}, {{author.first}}</a>,
+              <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.first}} {{author.last}}</a>,
             {% else %}
-              {{author.last}}, {{author.first}},
+              {{author.first}} {{author.last}},
             {% endif %}
           {% endif %}
         {% else %}
           and
           {% if author.last == site.scholar.last_name %}
-            <em>{{author.last}}, {{author.first}}</em>
+            <em>{{author.first}} {{author.last}}</em>
           {% else %}
             {% if site.data.coauthors[author.last] %}
-              <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.last}}, {{author.first}}</a>
+              <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.first}} {{author.last}}</a>
             {% else %}
-              {{author.last}}, {{author.first}}
+              {{author.first}} {{author.last}}
             {% endif %}
           {% endif %}
         {% endunless %}
       {% endfor %}
     </span>
 
-    <span class="periodical">
+    <span class="publication-block publication-event">
     {% if entry.type == "article" %}
       <em>{{entry.journal}}</em>
-    {% elsif entry.type == "inproceedings" %}
-      <em>In {{entry.booktitle}}</em>
+    {% elsif entry.type == "inproceedings" or entry.type == "incollection" %}
+      In <em>{{entry.booktitle}}</em>
+    {% elsif entry.type == "unpublished" %}
+      <em>{{ entry.archiveprefix }} {{entry.journal}}</em>
     {% endif %}
     {% if entry.year %}
       {{entry.year}}
@@ -54,29 +53,30 @@
   {% endif %}
 
   <span class="links">
+  {% if entry.url %}
+    <div class="publication-button doi-button">
+      <a href="{{ entry.url }}">doi</a>
+    </div>
+  {% endif %}
   {% if entry.abstract %}
-    [<a class="abstract">Abs</a>]
+    <div class="publication-button abstract-button">
+      <a class="abstract">Abstract</a>
+    </div>
+  {% endif %}
+  {% if entry.bibtex %}
+    <div class="publication-button bibtex-button">
+      <a class="bibtex">BibTeX</a>
+    </div>
   {% endif %}
   {% if entry.arxiv %}
-    [<a href="http://arxiv.org/abs/{{ entry.arxiv }}" target="_blank">arXiv</a>]
-  {% endif %}
-  {% if entry.html %}
-    [<a href="{{ entry.html }}" target="_blank">HTML</a>]
+    <div class="publication-button arxiv-button">
+      <a href="http://arxiv.org/abs/{{ entry.arxiv }}" target="_blank">arXiv</a>
+    </div>
   {% endif %}
   {% if entry.pdf %}
-    [<a href="{{ entry.pdf | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">PDF</a>]
-  {% endif %}
-  {% if entry.supp %}
-    [<a href="{{ entry.supp | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Supp</a>]
-  {% endif %}
-  {% if entry.poster %}
-    [<a href="{{ entry.poster | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Poster</a>]
-  {% endif %}
-  {% if entry.slides %}
-    [<a href="{{ entry.slides | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Slides</a>]
-  {% endif %}
-  {% if entry.code %}
-    [<a href="{{ entry.code }}" target="_blank">Code</a>]
+    <div class="publication-button pdf-button">
+      <a href="{{ entry.pdf | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">PDF</a>
+    </div>
   {% endif %}
   </span>
 
@@ -86,4 +86,12 @@
     <p>{{ entry.abstract }}</p>
   </span>
   {% endif %}
+
+  <!-- Hidden bibtex block -->
+  {% if entry.bibtex %}
+  <span class="bibtex hidden">
+    <p>{{ entry.bibtex }}</p>
+  </span>
+  {% endif %}
 </div>
+</li>

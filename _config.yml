@@ -52,12 +52,17 @@ scholar:
   style: apa
   locale: en
 
-  sort_by: year
-  order: descending
+  sort_by: year, month, timestamp
+  order: descending, descending, descending
 
   source: /_bibliography/
-  bibliography: papers.bib
+  bibliography: autogen_all.bib
   bibliography_template: bib
+
+  # <li> for each entry will be handled by bib.html
+  # we wrap them with <div class='delete-li'>
+  bibliography_item_tag: 'div'
+  bibliography_item_attributes: {'class': 'delete-li'}
 
   replace_strings: true
   join_strings: true
