@@ -14,3 +14,56 @@ cardinot:
     supervisorIds: oriordan griffith
     fundingIds: cnpq
     conclusionYear: 2020
+
+holland:
+  - courseId: phd
+    title: Evolving Collective Behaviours in Mobile Robots
+    supervisorIds: oriordan griffith
+    fundingIds: disc
+
+gibbons:
+  - courseId: phd
+    title: The Co-evolution of Cooperation and Mobility in Artificial Life Societies
+    supervisorIds: oriordan griffith
+    fundingIds: hardiman
+
+sarwar:
+  - courseId: phd
+    title: Usage of Passage Based Evidences in Information Retrieval Tasks
+    supervisorIds: oriordan newell
+    fundingIds: irc
+
+marshall:
+  - courseId: phd
+    title: Identifying Influential Nodes to Inhibit Bootstrap Percolation on Hyperbolic Networks
+    supervisorIds: oriordan cruickshank
+    fundingIds: hardiman
+
+bradshaw:
+  - courseId: phd
+    title: 'Improving Document Clustering Performance: The Use of an Automatically Generated Ontology to Augment Document Representations'
+    supervisorIds: oriordan
+
+locodi:
+  - courseId: phd
+    title: Evolutionary Game Theory
+    supervisorIds: oriordan
+    fundingIds: nuig
+
+skeikho:
+  - courseId: mscSoftware
+    title: Sentiment Analysis
+    supervisorIds: griffith
+    fundingIds:
+
+tarfa:
+  - courseId: mscSoftware
+    title: Recommender System
+    supervisorIds: oriordan
+    fundingIds:
+
+teleanca:
+  - courseId: phd
+    title: Evolutionary Game Theory
+    supervisorIds: oriordan
+    fundingIds:

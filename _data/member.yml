@@ -10,6 +10,7 @@
 #   github: johndoe               // optional
 #   linkedin: johndoe             // optional
 #   twitter: johndoe              // optional
+#   website: http://john.com      // optional
 
 cardinot:
   name: Marcos Cardinot
@@ -18,12 +19,14 @@ cardinot:
   gscholar: wuLwX_4AAAAJ
   dblp: 184/0893
   github: cardinot
+  website: http://cardinot.net
 
 griffith:
   name: Josephine Griffith
   email: josephine.griffith@nuigalway.ie
   gscholar: MeYCar0AAAAJ
   dblp: 57/2979
+  website: http://linitweb.it.nuigalway.ie/staff/griffith/home_pg.html
 
 oriordan:
   name: Colm O'Riordan
@@ -33,9 +36,268 @@ oriordan:
 
 hill:
   name: Seamus Hill
+  email: seamus.hill@nuigalway.ie
+  dblp: 80/4443
 
 mulvihil:
   name: Conn Mulvihil
+  email: conn_m@it.nuigalway.ie
+
+cruickshank:
+  name: James Cruickshank
+  email: james.cruickshank@nuigalway.ie
+  website: http://www.maths.nuigalway.ie/~jc
+
+newell:
+  name: John Newell
+  email: john.newell@nuigalway.ie
+  website: http://www.nuigalway.ie/our-research/people/johnnewell
+
+berthaud:
+  name: Sarah Berthaud
+
+cummins:
+  name: Ronan Cummins
+  email: ronan.cummins@cl.cam.ac.uk
+  gscholar: wQEvGP0AAAAJ
+  website: http://ir.dcs.gla.ac.uk/~ronanc/
+
+pasi:
+  name: Gabriella Pasi
+  orcid: 0000-0002-6080-8170
+  dblp: 26/4672
+
+howley:
+  name: Enda Howley
+  website: http://endahowley.ie
+
+holland:
+  name: Jane Holland
+  email: j.holland3@nuigalway.ie
+
+marshall:
+  name: Christine Marshall
+  email: c.marshall1@nuigalway.ie
+
+gibbons:
+  name: Maud Gibbons
+  email: m.gibbons11@nuigalway.ie
+
+locodi:
+  name: Alexandru Locodi
+  email: A.LOCODI1@nuigalway.ie
+
+teleanca:
+  name: Vlad Teleanca
+  email: vteleanca@yahoo.com
+
+loughname:
+  name: Chris Loughnane
+
+sarwar:
+  name: Ghulam Sarwar
+  email: g.sarwar1@nuigalway.ie
+
+bradshaw:
+  name: Stephen Bradshaw
+  email: s.bradshaw1@nuigalway.ie
+
+mullally:
+  name: Steven Mullally
+  email: mullally.steven@gmail.com
+
+oconnor:
+  name: Keith O'Connor
+  email: keith.oconnor@orreco.com
+
+bonney:
+  name: Megan Bonney
+  email: meganjbonney@gmail.com
+
+kirrane:
+  name: Padraic Kirrane
+
+skeikho:
+  name: Afnan Skeikho
+  email: a.sheikho1@nuigalway.ie
+
+tarfa:
+  name: Alma Tarfa
+  email: a.tarfa1@nuigalway.ie
 
 breen:
   name: Aidan Breen
+
+quereshi:
+  name: Atif Qureshi
+
+younus:
+  name: Arjumand Younus
+
+li:
+  name: Menglin Li
+
+cunningham:
+  name: Alan Cunningham
+
+doherty:
+  name: Darren Doherty
+
+curran:
+  name: Dara Curran
+
+zhang:
+  name: Ze Zhang
+
+ko:
+  name: Chiu-Wei Ko
+
+gormley:
+  name: Thomas Gormley
+
+ogorman:
+  name: Cathal O'Gorman
+
+walsh:
+  name: Niamh Walsh
+
+divilly:
+  name: Colin Divilly
+
+dooley:
+  name: Robert Dooley
+
+keaveney:
+  name: David Keaveney
+
+costello:
+  name: Fergal Costello
+
+mcmeekin:
+  name: Ethan McMeekin
+
+lynch:
+  name: Liam Lynch
+
+fahey:
+  name: Brendan Fahey
+
+mitchell:
+  name: Thomas Mitchell
+
+cryan:
+  name: Ciaran Ryan
+
+daly:
+  name: Cathy Daly
+
+oconnell:
+  name: Padraic O'Connell
+
+cusack:
+  name: John Cusack
+
+reddington:
+  name: Farrah Reddington
+
+murray:
+  name: Marguerite Murray
+
+scully:
+  name: Martina Scully
+
+fallon:
+  name: Owen Fallon
+
+lahart:
+  name: Orla Lahart
+
+mcdermott:
+  name: Paula McDermott
+
+mcloone:
+  name: Davin McLoone
+
+ryan:
+  name: Sean Ryan
+
+connolly:
+  name: Steven Connolly
+
+power:
+  name: David Power
+
+jordan:
+  name: Damien Jordan
+
+goulden:
+  name: Glenn Goulden
+
+omalley:
+  name: Conor O'Malley
+
+burke:
+  name: Nigel Burke
+
+tiruvaipati:
+  name: Yashwanth Tiruvaipati
+
+smullen:
+  name: Michael Smullen
+
+obroin:
+  name: Pilib O'Broin
+
+kelly:
+  name: Donal Kelly
+
+moran:
+  name: Marguerite Moran
+
+martin:
+  name: Orla Martin
+
+mnewell:
+  name: Mary Newell
+
+saunders:
+  name: David Saunders
+
+henry:
+  name: Lisa Henry
+
+manning:
+  name: Martina Manning
+
+mckiernan:
+  name: Aidan McKiernan
+
+obrien:
+ name: Anthony O' Brien
+
+cooley:
+  name: Adrian Cooley
+
+bhargava:
+  name: Banda Hanumantharao Bhargava
+
+pope:
+  name: David Pope
+
+devery:
+  name: Thomas Devery
+
+ratcliffe:
+  name: Colin Ratcliffe
+
+faherty:
+  name: Ciara Faherty
+
+rawlinson:
+  name: Karen Malone Rawlinson
+
+monahan:
+  name: John Monahan
+
+conroy:
+  name: John Conroy

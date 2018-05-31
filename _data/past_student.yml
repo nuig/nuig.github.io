@@ -1,0 +1,419 @@
+# This file stores the data about our past students
+# To add a record, refer to the example below.
+#
+# id:                         // this id MUST exist in the member.yml file
+#   - courseId: phd                     // mandatory
+#     title: Evolutionary Game Theory   // mandatory
+#     supervisorIds: oriordan griffith  // optional. Ids MUST exist in the member.yml file. Split ids with single space (if >1 supervisor).
+#     fundingIds: cnpq                  // optional. Ids MUST exist in the funding.yml file. Split ids with single space (if >1 funding).
+#     conclusionYear: 2018              // optional
+#
+#   // if the student finished another course, just add another block, eg:
+#   - courseId: msc                     // mandatory
+#     title: Evolutionary Game Theory   // mandatory
+#     supervisorIds: oriordan griffith  // optional.
+#     fundingIds: cnpq                  // optional.
+#     conclusionYear: 2010              // optional
+
+breen:
+  - courseId: phd
+    title: Computational intelligence in aesthetics and analogy in music and art
+    conclusionYear: 2018
+    supervisorIds: oriordan
+    fundingIds: hardiman
+
+bonney:
+  - courseId: mscSoftware
+    title: Evolutionary Game Theory
+    conclusionYear: 2017
+    supervisorIds: oriordan
+
+mullally:
+  - courseId: mscSoftware
+    title: 'The Ultimatum Game: Using Reputation to Promote Cooperation'
+    conclusionYear: 2017
+    supervisorIds: oriordan
+
+oconnor:
+  - courseId: mscSoftware
+    title: 'Graph-Based Recommendations: Social and Content Recommendations for Boards.ie using Neo4j'
+    conclusionYear: 2016
+    supervisorIds: oriordan
+
+li:
+  - courseId: phd
+    title: Graph topology and the evolution of cooperation
+    conclusionYear: 2015
+    supervisorIds: oriordan
+    fundingIds: irc
+  - courseId: mscSoftware
+    title: An Analysis of Multi-Chromosome GAs on Deceptive Problems
+    conclusionYear: 2012
+    supervisorIds: oriordan
+
+kirrane:
+  - courseId: mscSoftware
+    title: Neuroevolution of agents in complex settings
+    conclusionYear: 2015
+    supervisorIds: oriordan
+
+quereshi:
+  - courseId: phd
+    title: Utilising Wikipedia for text mining applications
+    conclusionYear: 2015
+    supervisorIds: oriordan pasi
+
+younus:
+  - courseId: phd
+    title: Utilization of social breadcrumbs for user profiling in personalization
+    conclusionYear: 2015
+    supervisorIds: oriordan pasi
+    fundingIds: hardiman
+
+cunningham:
+  - courseId: phd
+    title: The Evolution of Groups for Common Pool Resource Sharing
+    conclusionYear: 2013
+    supervisorIds: oriordan
+    fundingIds: nuig
+
+howley:
+  - courseId: phd
+    title: 'Trust and Multi-Agent Interactions: A Game Theoretic Analysis'
+    conclusionYear: 2009
+    supervisorIds: oriordan
+
+cummins:
+  - courseId: phd
+    title: The Evolution and Analysis of Term-Weighting Schemes in Information Retrieval
+    supervisorIds: oriordan
+    conclusionYear: 2008
+    fundingIds: irc
+  - courseId: mscSoftware
+    title: Evolutionary Computation in Information Retrieval
+    supervisorIds: oriordan
+    conclusionYear: 2004
+
+doherty:
+  - courseId: phd
+    title: Evolving novel behaviours for NPCs in computer games
+    supervisorIds: oriordan
+    conclusionYear:
+
+curran:
+  - courseId: phd
+    title: Incorporating cultural learning and memes into traditional evolutionary computation techniques
+    supervisorIds: oriordan
+    conclusionYear:
+
+keaveney:
+  - courseId: mscCS
+    title: Application of Evolutionary Computation to strategic multi-player games
+    supervisorIds: oriordan
+    conclusionYear:
+
+costello:
+  - courseId: mscCS
+    title: Computational Intelligence Approaches to game design and generation
+    supervisorIds: oriordan
+    conclusionYear:
+
+moran:
+  - courseId: mscApplied
+    title: Multi-Agent Systems - Trust and Reputation
+    supervisorIds: oriordan
+    conclusionYear:
+
+martin:
+  - courseId: mscApplied
+    title: Natural Language Processing techniques for Cross-Lingual Information Retrieval
+    supervisorIds: oriordan
+    conclusionYear:
+
+mnewell:
+  - courseId: mscApplied
+    title: Cultural evolution and social norms in multi-agent systems
+    supervisorIds: oriordan
+    conclusionYear:
+
+omalley:
+  - courseId: mscApplied
+    title: Cooperation, Trust and Graph Properties in Spatial Prisoner's Dilemma Games
+    supervisorIds: oriordan
+    conclusionYear:
+
+smullen:
+  - courseId: mscApplied
+    title: Modelling context in information retrieval
+    supervisorIds: oriordan
+    conclusionYear:
+
+ryan:
+  - courseId: mscApplied
+    title: Distributed Information Retrieval
+    supervisorIds: oriordan
+    conclusionYear:
+
+zhang:
+  - courseId: mscSoftware
+    title: Automatic categorisation of images
+    conclusionYear:
+    supervisorIds:
+
+ko:
+  - courseId: mscSoftware
+    title: Topic-based user similarity in online social networks
+    conclusionYear: 2015
+    supervisorIds: griffith
+
+gormley:
+  - courseId: mscSoftware
+    title: Automatic detection of sarcasm
+    conclusionYear: 2015
+    supervisorIds: griffith
+
+ogorman:
+  - courseId: mscSoftware
+    title: Automatic recognition of genre and artist
+    conclusionYear:
+    supervisorIds:
+
+walsh:
+  - courseId: mscSoftware
+    title: Automatically Detecting Politeness in Online Text
+    conclusionYear: 2014
+    supervisorIds: griffith
+
+divilly:
+  - courseId: mscSoftware
+    title: Applying Evolutionary Computation to Mancala variants
+    conclusionYear:
+    supervisorIds:
+
+dooley:
+  - courseId: mscSoftware
+    title: Information Retrieval
+    conclusionYear:
+    supervisorIds:
+
+mcmeekin:
+  - courseId: mscSoftware
+    title: An analysis of Strategies within a turn based war strategy game
+    supervisorIds: oriordan
+    conclusionYear:
+
+lynch:
+  - courseId: mscSoftware
+    title: String Matching in Large Datasets Using Orthographic, Phonetic and Semantic Search Algorithms
+    conclusionYear:
+    supervisorIds:
+
+fahey:
+  - courseId: mscSoftware
+    title: 'Evolving a Language: Toward Open-Ended Evolution'
+    conclusionYear:
+    supervisorIds:
+
+mitchell:
+  - courseId: mscSoftware
+    title: Recommendation in Geo-Social Networks
+    conclusionYear:
+    supervisorIds:
+
+connolly:
+  - courseId: mscSoftware
+    title: Improving twitter search by removing spam, reducing redundancy and ranking results
+    conclusionYear:
+    supervisorIds:
+
+jordan:
+  - courseId: mscSoftware
+    title: An analysis of evolved strategies for Mancala games
+    conclusionYear:
+    supervisorIds:
+
+burke:
+  - courseId: mscSoftware
+    title: An heuristic based approach to team based behaviours in real time strategy games
+    conclusionYear:
+    supervisorIds:
+
+tiruvaipati:
+  - courseId: mscSoftware
+    title: A game-theoretic approach to modelling emotions in NPCs in computer games
+    conclusionYear:
+    supervisorIds:
+
+obroin:
+  - courseId: mscSoftware
+    title: Evolution of deceptive strategies in auctions
+    conclusionYear:
+    supervisorIds:
+
+kelly:
+  - courseId: mscSoftware
+    title: Evolution of strategies in spatially organised N-Player Dilemmas
+    conclusionYear:
+    supervisorIds:
+
+saunders:
+  - courseId: mscSoftware
+    title: Using genetic programming to evolve novel behaviours in computer games
+    conclusionYear:
+    supervisorIds:
+
+henry:
+  - courseId: mscSoftware
+    title: Analysis of the effects of dominance structures in groups
+    conclusionYear:
+    supervisorIds:
+
+cryan:
+  - courseId: mscSoftware
+    title: Graph representations in cross-lingual IR
+    conclusionYear:
+    supervisorIds:
+
+daly:
+  - courseId: mscSoftware
+    title: Graph representations and algorithms for Information Retrieval
+    conclusionYear:
+    supervisorIds:
+
+oconnell:
+  - courseId: mscSoftware
+    title: Formal methods in Multi-agent Systems
+    conclusionYear:
+    supervisorIds:
+
+cusack:
+  - courseId: mscSoftware
+    title: Trading in MAS
+    conclusionYear:
+    supervisorIds:
+
+pope:
+  - courseId: mscSoftware
+    title: An Analysis and Prediction of Sentiment and Mood during the 2015/2016 Syrian Refugee Crisis
+    conclusionYear: 2016
+    supervisorIds: griffith
+
+devery:
+  - courseId: mscSoftware
+    title: Social Media Music Recommendation
+    conclusionYear: 2016
+    supervisorIds: griffith
+
+ratcliffe:
+  - courseId: mscSoftware
+    title: Deep learning for Sentiment Analysis and Sarcasm Detection in Twitter Conversations
+    conclusionYear: 2016
+    supervisorIds: griffith
+
+faherty:
+  - courseId: mscCS
+    title: What next for Recommendation Systems?
+    conclusionYear: 2014
+    supervisorIds: griffith
+
+rawlinson:
+  - courseId: mscSoftware
+    title: A Rapid Application Development Approach to Web Application Development in the Financial Services Sector
+    conclusionYear: 2011
+    supervisorIds: griffith
+
+monahan:
+  - courseId: mscSoftware
+    title: Analysis of Irish-based Business Communities on Facebook
+    conclusionYear: 2011
+    supervisorIds: griffith
+
+conroy:
+  - courseId: mscSoftware
+    title: Social Network Analysis and Sentiment Analysis of Microblogging Data
+    conclusionYear: 2010
+    supervisorIds: griffith
+
+bhargava:
+  - courseId: mscSoftware
+    title: An Investigation of Data in an Online Social Website
+    conclusionYear: 2010
+    supervisorIds: griffith
+
+cooley:
+  - courseId: mscSoftware
+    title: Data Mining Blogs
+    conclusionYear: 2007
+    supervisorIds: griffith
+
+reddington:
+  - courseId: mscSoftware
+    title: The Effect of User Feedback and Transparency in Improving Information Retrieval Systems
+    conclusionYear: 2004
+    supervisorIds: griffith
+
+murray:
+  - courseId: mscSoftware
+    title: Incorporating Novelty as a Metric in an Information Retrieval System
+    conclusionYear: 2004
+    supervisorIds: griffith
+
+scully:
+  - courseId: mscSoftware
+    title: Combining Information Management Techniques in a Web-based Education System
+    conclusionYear: 2003
+    supervisorIds: griffith
+
+fallon:
+  - courseId: mscSoftware
+    title: Trust and Reputation in Agent based systems
+    conclusionYear:
+    supervisorIds:
+
+lahart:
+  - courseId: mscSoftware
+    title: Algorithms and systems for music retrieval, clustering and creation
+    conclusionYear:
+    supervisorIds:
+
+mcdermott:
+  - courseId: mscSoftware
+    title: A multi-agent system for information trading and management
+    conclusionYear:
+    supervisorIds:
+
+mcloone:
+  - courseId: mscSoftware
+    title: Data mining techniques to aid users in browsing
+    conclusionYear:
+    supervisorIds:
+
+hill:
+  - courseId: mscSoftware
+    title: --
+    supervisorIds: oriordan
+    conclusionYear:
+
+manning:
+  - courseId: mscSoftware
+    title: --
+    supervisorIds: oriordan
+    conclusionYear:
+
+mckiernan:
+  - courseId: mscSoftware
+    title: --
+    supervisorIds: oriordan
+    conclusionYear:
+
+obrien:
+  - courseId: mscSoftware
+    title: --
+    supervisorIds: oriordan
+    conclusionYear:
+
+goulden:
+  - courseId: mscSoftware
+    title: --
+    supervisorIds: oriordan
+    conclusionYear:
