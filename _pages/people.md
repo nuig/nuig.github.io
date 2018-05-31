@@ -19,4 +19,8 @@ datatable: true
 {% include people_list.html %}
 
 #### Past Postgraduate Students
-{% include alumni_table.html %}
+{% include past_students_table.html %}
+
+<p style="text-align: center;margin-top: 2em;">
+If you need to add/update anything, please follow the instructions <a href="https://github.com/nuig/nuig.github.io/blob/master/README.md">here</a>.
+</p>

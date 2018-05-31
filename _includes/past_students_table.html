@@ -1,4 +1,4 @@
-<table id="alumniTable" class="hover">
+<table id="pastStudentsTable" class="hover">
   <thead>
     <tr>
       <th>End</th>
@@ -8,7 +8,7 @@
     </tr>
   </thead>
   <tbody>
-  {% assign members=site.data.alumni %}
+  {% assign members=site.data.past_student %}
   {% for member in members %}
     {% assign key=member[0] %}
     {% assign contact=site.data.member[key] %}

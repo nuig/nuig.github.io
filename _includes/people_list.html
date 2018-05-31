@@ -28,16 +28,41 @@
     {% endfor %}
   {% endif %}
   &nbsp;
-  {% if contact.email %}<a href="mailto:{{ contact.email | encode_email }}"><i class="fas fa-envelope"></i></a>{% endif %}
-  {% if contact.orcid %}<a href="mailto:{{ contact.orcid | encode_email }}"><i class="ai ai-orcid"></i></a>{% endif %}
-  {% if contact.gscholar %}<a href="https://scholar.google.com/citations?user={{ contact.gscholar }}" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>{% endif %}
-  {% if contact.dblp %}<a href="https://dblp.org/pid/{{ contact.dblp }}" target="_blank" title="DBLP"><i class="ai ai-dblp"></i></a>{% endif %}
-  {% if contact.github %}<a href="https://github.com/{{ contact.github }}" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>{% endif %}
-  {% if contact.linkedin %}<a href="https://www.linkedin.com/in/{{ contact.linkedin }}" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>{% endif %}
-  {% if contact.twitter %}<a href="https://twitter.com/{{ contact.twitter }}" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>{% endif %}
+  {% if contact.website %}
+    <a href="{{ contact.website }}" target="_blank" title="Personal Web Page">
+      <i class="fas fa-globe"></i></a>
+  {% endif %}
+  {% if contact.email %}
+  <a href="mailto:{{ contact.email | encode_email }}">
+      <i class="fas fa-envelope"></i></a>
+  {% endif %}
+  {% if contact.orcid %}
+    <a href="https://orcid.org/{{ contact.orcid }}" target="_blank" title="ORCID">
+      <i class="ai ai-orcid"></i></a>
+  {% endif %}
+  {% if contact.gscholar %}
+    <a href="https://scholar.google.com/citations?user={{ contact.gscholar }}" target="_blank" title="Google Scholar">
+      <i class="ai ai-google-scholar"></i></a>
+  {% endif %}
+  {% if contact.dblp %}
+    <a href="https://dblp.org/pid/{{ contact.dblp }}" target="_blank" title="DBLP">
+        <i class="ai ai-dblp"></i></a>
+  {% endif %}
+  {% if contact.github %}
+    <a href="https://github.com/{{ contact.github }}" target="_blank" title="GitHub">
+      <i class="fab fa-github"></i></a>
+  {% endif %}
+  {% if contact.linkedin %}
+    <a href="https://www.linkedin.com/in/{{ contact.linkedin }}" target="_blank" title="LinkedIn">
+      <i class="fab fa-linkedin"></i></a>
+  {% endif %}
+  {% if contact.twitter %}
+    <a href="https://twitter.com/{{ contact.twitter }}" target="_blank" title="Twitter">
+      <i class="fab fa-twitter"></i></a>
+  {% endif %}
 
   {% for detail in details %}
-    {% include student_details.html %}
+  {% include student_details.html %}<br>
   {% endfor %}
 
   </li>
