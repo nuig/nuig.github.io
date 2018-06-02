@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+# Run this script to sync the data directory
+
+DATA_REPOSITORY="data"
+DATA_REPOSITORY_URL="git@github.com:nuig/data.git"
+
+cd ..
+echo "Current path: $(pwd)"
+echo "Repository path: $DATA_REPOSITORY"
+echo "Repository url: $DATA_REPOSITORY_URL"
+
+# If the data repository does not exists, just clone it from url
+if [ ! -d "$DATA_REPOSITORY" ]; then
+    git clone $DATA_REPOSITORY_URL $DATA_REPOSITORY
+    exit 0
+fi
+
+# Check if there are any uncommitted changes
+if ! git diff-index --quiet HEAD --; then
+    echo "Changes to the following files are uncommitted:"
+    git diff-index --name-only HEAD --
+    echo "Please commit the changes before proceeding."
+    echo "Aborting."
+    [[ "$0" = "$BASH_SOURCE" ]] && exit 1 || return 1
+fi
+
+echo "Updated successfully!"
+
+exit 0
