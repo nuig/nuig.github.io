@@ -22,9 +22,9 @@ collections:
       layout: post
     output: true
     permalink: /news/:path/
-#  projects:
-#    output: true
-#    permalink: /projects/:path/
+  research:
+    output: true
+    permalink: /research/:path/
 
 news_limit: 5
 
@@ -58,6 +58,7 @@ scholar:
   source: /_bibliography/
   bibliography: autogen_all.bib
   bibliography_template: bib
+  repository: data
 
   # <li> for each entry will be handled by bib.html
   # we wrap them with <div class='delete-li'>
@@ -66,10 +67,6 @@ scholar:
 
   replace_strings: true
   join_strings: true
-
-  details_dir: bibliography
-  details_layout: bibtex.html
-  details_link: Details
 
   query: "@*"
 

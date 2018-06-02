@@ -73,9 +73,9 @@
       <a href="http://arxiv.org/abs/{{ entry.arxiv }}" target="_blank">arXiv</a>
     </div>
   {% endif %}
-  {% if entry.pdf %}
+  {% if links.pdf %}
     <div class="publication-button pdf-button">
-      <a href="{{ entry.pdf | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">PDF</a>
+      <a href="{{ links.pdf | prepend: site.baseurl | prepend: site.url }}" target="_blank">PDF</a>
     </div>
   {% endif %}
   </span>
