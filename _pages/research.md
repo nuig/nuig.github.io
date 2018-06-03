@@ -2,7 +2,9 @@
 layout: page
 title: research
 permalink: /research/
-description: For more detail on ongoing research please refer to the publications page.
+description: >
+    Here we describe our main areas of interest. For more details on the
+    ongoing research, please refer to the publications page.
 ---
 
 {% for research in site.research %}

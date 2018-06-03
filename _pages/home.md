@@ -14,6 +14,11 @@ We are actively involved in research in the following domains:
 * Evolutionary Game Theory
 * Agent-based Systems
 * Social Media
+* Collaborative Filtering
+* Sentiment Analysis
+* Applied Linguistics
+
+Check out the [research page]({{ research | prepend: site.baseurl | prepend: site.url }}) for a more detailed description of our main areas of interest. Also, for more details on the ongoing research, please refer to the [publications page]({{ publications | prepend: site.baseurl | prepend: site.url }}).
 
 Members of the group are funded by a number of sources including
 [IRCSET postgraduate schemes](http://research.ie){:target="\_blank"},

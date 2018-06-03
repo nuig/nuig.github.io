@@ -3,10 +3,7 @@ layout: research
 title: Recommendation and collaborative filtering
 img: /assets/img/research_recommender.jpg
 description: >
-    Recommendation tools are now a common component in many online sites
-    which involve a user choosing to view or purchase items based on
-    personal preferences. Collaborative Filtering techniques are one
-    approach to recommendation.
+    Recommendation tools are now a common component in many online sites which involve a user choosing to view or purchase items based on personal preferences. We have been researching a range of approaches and techniques in the analysis of the usefulness and novelty of recommendations and many others.
 ---
 
 Recommendation tools are now a common component in many online sites which involve a user choosing to view or purchase items based on personal preferences. For example, books, movies, music, hotels, restaurants, etc.
