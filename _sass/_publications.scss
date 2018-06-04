@@ -40,9 +40,10 @@
             transition: all 0.15s ease;
 
             p {
+                font-size: smaller;						
+                font-family: monospace;
                 line-height: 1.4em;
                 margin: 10px;
-                white-space: pre;
             }
             pre {
                 font-size: 1em;
@@ -66,6 +67,9 @@
         }
         span.bibtex.hidden {
             border: dashed 1px $background-color;
+            p {
+                white-space: pre;
+            }
         }
         span.bibtex.hidden.open {
             border-color: $grey-color;

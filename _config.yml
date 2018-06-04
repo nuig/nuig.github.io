@@ -10,8 +10,7 @@ footer_text: National University of Ireland Galway
 url: https://nuig.github.io
 baseurl:
 last_updated: # leave blank if you don't want to display last updated
-
-google_analytics: UA-XXXXXXXXX # out your google-analytics code
+google_analytics: UA-120208085-1
 
 # -----------------------------------------------------------------------------
 # Collections

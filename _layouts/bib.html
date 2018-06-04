@@ -53,9 +53,13 @@
   {% endif %}
 
   <span class="links">
-  {% if entry.url %}
+  {% if entry.doi %}
     <div class="publication-button doi-button">
-      <a href="{{ entry.url }}">doi</a>
+      <a href="{% unless entry.doi contains 'http' %}https://doi.org/{% endunless %}{{ entry.doi }}">doi</a>
+    </div>
+  {% elsif entry.url %}
+    <div class="publication-button doi-button">
+      <a href="{{ entry.url }}">url</a>
     </div>
   {% endif %}
   {% if entry.abstract %}
