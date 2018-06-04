@@ -167,14 +167,15 @@ def main():
     os.chdir(bibliography_dir)
     database = dblpDatabase()
 
-    with open(manual_filename, 'r') as bibstr:
-        bib = loadBibtex(bibstr)
-        entries = len(bib.entries)
-        if entries > 0:
-            print('Manual entries\n  -> reading %d entries' % entries)
-            database = merge(bib, database)
-
     database = mergePreprints(database)
+
+    with open(manual_filename, 'r') as bibstr:
+        custom_bib = loadBibtex(bibstr)
+        entries = len(custom_bib.entries)
+        if entries > 0:
+            print('Custom entries\n  -> reading %d entries' % entries)
+            database = merge(custom_bib, database)
+
 
     filename = 'autogen_all.bib'
     with open(filename, 'w') as bibfile:

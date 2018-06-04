@@ -52,10 +52,14 @@
     </span>
   {% endif %}
 
+  {% if entry.award %}
+  <span class="publication-award">{{ entry.award }}</span>
+  {% endif %}
+
   <span class="links">
   {% if entry.doi %}
     <div class="publication-button doi-button">
-      <a href="{% unless entry.doi contains 'http' %}https://doi.org/{% endunless %}{{ entry.doi }}">doi</a>
+      <a href="{% unless entry.doi contains 'http' %}https://doi.org/{% endunless %}{{ entry.doi }}" target="_blank">doi</a>
     </div>
   {% elsif entry.url %}
     <div class="publication-button doi-button">
@@ -74,7 +78,7 @@
   {% endif %}
   {% if entry.arxiv %}
     <div class="publication-button arxiv-button">
-      <a href="http://arxiv.org/abs/{{ entry.arxiv }}" target="_blank">arXiv</a>
+      <a href="{% unless entry.arxiv contains 'http' %}http://arxiv.org/abs/{% endunless %}{{ entry.arxiv }}" target="_blank">arXiv</a>
     </div>
   {% endif %}
   {% if links.pdf %}
