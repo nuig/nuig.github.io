@@ -1,6 +1,6 @@
 .publications {
     h2 {
-        color: $theme-color;
+        color: $light-gray;
         // border-bottom: 1px solid $theme-color;
         // border-top: 1px solid $theme-color;
         font-size: 32px;
@@ -8,6 +8,27 @@
         // padding: 20px 0;
         text-align: center;
     }
+    a {
+        color: $light-gray;
+        text-decoration: none;
+        &:hover {
+            color: $mid-gray;
+            text-decoration: none;
+        }
+    }
+    a.anchor {
+        display: block;
+        position: relative;
+        top: -80px;
+        visibility: hidden;
+    }
+}
+.publication-type {
+    border-top: 1px solid $light-gray;
+    color: $light-gray;
+    margin: 0 -3em 1ex -2em;
+    padding-top: 1ex;
+    text-align: right;
 }
 .year {
     border-top: 1px solid $light-gray;
@@ -208,4 +229,32 @@
 }
 .doi-button {
     background-color: $blue-1;
+}
+
+
+/* Publication: header buttons (type and year) */
+.publications-header-button {
+    display: inline-block;
+    border: none;
+    padding: 5px 12px;
+    text-align: center;
+    text-decoration: none;
+    margin: 1px 3px 1px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    background-color: $light-gray;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    &:hover {
+        background-color: #f44336;
+        a {
+            color: white;
+        }
+    }
+    .active-button {
+        color: $mid-gray;
+    }
 }

@@ -1,8 +1,9 @@
 ---
-layout: page
+layout: publications
 permalink: /publications/
 title: publications
-description: Publications by categories in reversed chronological order.
+description: Showing publications by year.
+style: byyear
 ---
 
 {% assign nextYear = site.time | date: '%Y' | plus: 2 %}
@@ -13,7 +14,8 @@ description: Publications by categories in reversed chronological order.
 
   {% assign entries = entries | plus: 0 %}
   {% if entries > 0 %}
-  <h3 class="year">{{y}}</h3>
+  <a id="{{ y }}" class="anchor"></a>
+  <h3 class="year"><a href="#{{ y }}">{{ y }}</a></h3>
   {% bibliography -f autogen_all -q @*[year={{y}}]* %}
   {% endif %}
 {% endfor %}

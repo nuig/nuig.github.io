@@ -12,6 +12,23 @@
     border-radius: .25em;
 }
 
+.grid-container {
+   display: grid;
+   grid-template-columns: auto auto; 
+   padding: 0px;
+}
+.grid-item {
+   background-color: rgba(255, 255, 255, 0.8);
+   border: 0px;
+   padding: 0px;
+   text-align: center;
+}
+.left-align {
+   text-align: left;
+}
+.right-align {
+   text-align: right;
+}
 .grid {
     display: grid;
     @media (min-width: 600px) {
