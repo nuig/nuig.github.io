@@ -39,7 +39,7 @@ black_list = []
 bibliography_dir = "_bibliography/"
 
 # filename for the entries added manually
-manual_filename = 'manual.bib'
+manual_filename = 'custom_entries.bib'
 
 #####################################################################
 # DO NOT CHANGE THE SCRIPT BELOW
@@ -53,11 +53,19 @@ from bibtexparser.customization import *
 from datetime import datetime
 import os
 
+# return date string in YYYY-MM-DD format
+def parseDate(date_text):
+    try:
+        date_text = date_text.split(' +')[0]
+        dt = datetime.strptime(date_text, '%a, %d %b %Y %H:%M:%S')
+        return dt.strftime("%Y-%m-%d")
+    except ValueError:
+        dt = datetime.strptime(date_text, '%Y-%m-%d')
+        return date_text
+
 def fix_format(record):
     if record['timestamp']:
-        record['timestamp'] = record['timestamp'].split(' +')[0]
-        ts = datetime.strptime(record['timestamp'], '%a, %d %b %Y %H:%M:%S')
-        record['timestamp'] = ts.strftime("%Y-%m-%d")
+        record['timestamp'] = parseDate(record['timestamp'])
     if record['ID']:
         record['ID'] = record['ID'].replace("DBLP:", "", 1)
         record['ID'] = record['ID'].replace("/", "_")
