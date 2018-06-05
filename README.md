@@ -70,6 +70,8 @@ The list of publications is automatically synchronized with [DBLP](http://dblp.u
 
 * **Note:** you should not touch any of the `autogen_` files.
 
+* **Note:** to provide a pdf for a publication, check out the [data repository](https://github.com/nuig/data).
+
 Now, just commit your changes and create a [pull request](https://github.com/nuig/nuig.github.io/pulls).
 
 ### Updating the research page
