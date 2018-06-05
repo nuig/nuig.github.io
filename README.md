@@ -26,7 +26,9 @@ Now, feel free to make changes.
 
 ## Updating page content
 
-Assuming you are in the `src` branch (`git checkout src`), the content of each page is in the `_pages/` directory. However, if you just want to update the list of members or projects you just have to look at the `_data/` directory (more information below).
+:exclamation: **need help? want us to update something? just open an [issue](https://github.com/nuig/nuig.github.io/issues) describing what you want to add/update and someone will do that for you asap. If you want to update anything yourself, do it! see instructions below.**
+
+Assuming you are in the `src` branch (`git checkout src`), the content of each page is in the `_pages/` directory. However, if you want to update the list of members or research projects, you'll have to look at the `_data/` and the `_research` directories respectively (more information below).
 
 * [Home](htts://nuig.github.io) (`/`): [_pages/home.md](https://github.com/nuig/nuig.github.io/blob/src/_pages/home.md)
 
@@ -34,10 +36,44 @@ Assuming you are in the `src` branch (`git checkout src`), the content of each p
 
 
 ### Updating the list of members
-`TO DO`
+
+To add a new member, just go to [`_data/member.yml`](https://github.com/nuig/nuig.github.io/blob/src/_data/member.yml) and the paste the lines below in the end of the file.
+
+``` yaml
+your-surname-x:                 // make sure it's a unique id in the whole file
+  name: John Doe                // mandatory
+  email: j@d.com                // optional
+  orcid: 0000-0000-0000-0000    // optional
+  gscholar: wuLwX_4AAAAJ        // optional
+  dblp: 123/1234                // optional
+  github: johndoe               // optional
+  linkedin: johndoe             // optional
+  twitter: johndoe              // optional
+  website: http://john.com      // optional
+```
+
+* If you are a **staff member**, add your id (`your-surname-x`) at [`_data/staff.yml`](https://github.com/nuig/nuig.github.io/blob/src/_data/staff.yml).
+
+* If you are a **collaborator**, add your id (`your-surname-x`) at [`_data/collaborator.yml`](https://github.com/nuig/nuig.github.io/blob/src/_data/collaborator.yml).
+
+* If you are a **student**, add your id (`your-surname-x`) at [`_data/student.yml`](https://github.com/nuig/nuig.github.io/blob/src/_data/student.yml).
+
+* If you are a **past student**, add your id (`your-surname-x`) at [`_data/past_student.yml`](https://github.com/nuig/nuig.github.io/blob/src/_data/past_student.yml).
+
+Now, just commit your changes and create a [pull request](https://github.com/nuig/nuig.github.io/pulls).
 
 ### Updating the list of publications
-`TO DO`
 
-### Updating projects page
-`TO DO`
+The list of publications is automatically synchronized with [DBLP](http://dblp.uni-trier.de/). However, if you think something is wrong or missing, just add it to [`_bibliography/custom_entries.bib`](https://github.com/nuig/nuig.github.io/blob/src/_bibliography/custom_entries.yml) in BibTeX format.
+
+* **Note:** if the publication is already listed in the final auto-generated file [`_bibliography/autogen_all.bib`](https://github.com/nuig/nuig.github.io/blob/src/_bibliography/autogen_all.yml), to avoid duplicates, make sure you use the same id at `_bibliography/custom_entries.bib`.
+
+* **Note:** you should not touch any of the `autogen_` files.
+
+Now, just commit your changes and create a [pull request](https://github.com/nuig/nuig.github.io/pulls).
+
+### Updating the research page
+
+All research projects listed on the [research page](https://nuig.github.io/research) come from the [`_research`](https://github.com/nuig/nuig.github.io/blob/src/_research) directory. Thus, to **edit something**, just find the corresponding `md` file and make your changes. If you want to **add a new research page**, just duplicate any of the existing files and edit the content of it.
+
+Now, just commit your changes and create a [pull request](https://github.com/nuig/nuig.github.io/pulls).

@@ -5,6 +5,10 @@ title: CIRG
 description: Computational Intelligence Research Group
 ---
 
+<div class="img_row">
+    <img class="col full" src="{{ site.baseurl }}/assets/img/home.jpg">
+</div>
+
 Welcome to the Computational Intelligence Research Group (CIRG) home page at the [College of Engineering & Informatics](http://www.nuigalway.ie/engineering){:target="\_blank"}, [National University of Ireland Galway](http://www.nuigalway.ie){:target="\_blank"}.
 
 We are actively involved in research in the following domains:
