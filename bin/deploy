@@ -72,12 +72,15 @@ then
 fi
 git checkout -b $DEPLOY_BRANCH
 
+# download data
+bash bin/updateData
+
 # Build site
 bundle exec jekyll build
 
 # Delete and move files
 find . -maxdepth 1 ! -name 'bin' ! -name '_site' ! -name '.git' ! -name '.gitignore' -exec rm -rf {} \;
-rm -rf _site/bin/
+rm -rf _site/bin/ _site/data/
 mv _site/* .
 rm -R _site/
 
