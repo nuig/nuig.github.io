@@ -147,37 +147,25 @@
 
 /* Publication type icons */
 .publication-icon {
-    position: relative;
-}
-.publication-icon:before {
-    vertical-align: top;
-    content: "\f0c8";
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    text-decoration: inherit;
-    margin-left: 0;
-    padding-right: 0.2em;
     padding-top: 0.22em;
-    position: relative;
-    top: 0px;
+    padding-right: 0.2em;
 }
-.journal-icon:before {
+.journal-icon {
     color: #BA55D3;
 }
-.conference-icon:before {
+.conference-icon {
     color: #4169E1;
 }
-.bookchapter-icon:before {
+.bookchapter-icon {
     color: #009933;
 }
-.techreport-icon:before {
+.techreport-icon {
     color: #663300;
 }
-.book-icon:before {
+.book-icon {
     color: #CC9933;
 }
-.unpublished-icon:before {
+.unpublished-icon {
     color: #444;
 }
 
