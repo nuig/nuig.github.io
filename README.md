@@ -26,7 +26,7 @@ Now, feel free to make changes.
 
 ## Updating page content
 
-:exclamation: **need help? want us to update something? just open an [issue](https://github.com/nuig/nuig.github.io/issues) describing what you want to add/update and someone will do that for you asap. If you want to update anything yourself, do it! see instructions below.**
+:exclamation: **need help? want us to update something? just open an [issue](https://github.com/nuig/nuig.github.io/issues/new) describing what you want to add/update and someone will do that for you asap. If you want to update anything yourself, do it! see instructions below.**
 
 Assuming you are in the `src` branch (`git checkout src`), the content of each page is in the `_pages/` directory. However, if you want to update the list of members or research projects, you'll have to look at the `_data/` and the `_research` directories respectively (more information below).
 
