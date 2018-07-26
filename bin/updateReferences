@@ -69,6 +69,10 @@ def fix_format(record):
     if record['ID']:
         record['ID'] = record['ID'].replace("DBLP:", "", 1)
         record['ID'] = record['ID'].replace("/", "_")
+    if 'doi' in record:
+        record['doi'] = record['doi'].replace("\\_", "_")
+    if 'url' in record:
+        record['url'] = record['url'].replace("\\_", "_")
     return record
 
 def loadBibtex(bibstr):
