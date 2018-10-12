@@ -3,6 +3,7 @@
   {% assign count_inproceedings = -1 %}
   {% assign count_incollection = -1 %}
   {% assign count_unpublished = -1 %}
+  {% assign count_techreport = -1 %}
   {% assign count_others = -1 %}
 {% endunless %}
 
@@ -28,6 +29,13 @@
   {% assign entry_number = count_incollection %}
   {% assign type_tag_class = "bookchapter-icon publication-icon" %}
   {% assign type_name = "Book Chapter" %}
+{% elsif entry.type == "techreport" %}
+  {% bibliography_count -f autogen_all --query @techreport %}
+  {% assign type_tag = "t" %}
+  {% assign count_techreport = count_techreport | plus: 1 %}
+  {% assign entry_number = count_techreport %}
+  {% assign type_tag_class = "techreport-icon publication-icon" %}
+  {% assign type_name = "Technical Report" %}
 {% elsif entry.type == "unpublished" %}
   {% bibliography_count -f autogen_all --query @unpublished %}
   {% assign type_tag = "p" %}
@@ -37,7 +45,7 @@
   {% assign type_name = "Preprint" %}
 {% else %}
   {% assign type_tag = "o" %}
-  {% assign count_others = count_others | plus: 1 %}
+  {% assign count_others = count_others | minus: 1 %}
   {% assign entry_number = count_others %}
   {% assign type_tag_class = "publication-icon" %}
 {% endif %}
