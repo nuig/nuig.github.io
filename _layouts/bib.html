@@ -14,28 +14,19 @@
     <span class="publication-block publication-title">{{entry.title}}</span>
     <span class="publication-block publication-author">
       {% for author in entry.author_array %}
-        {% unless forloop.last %}
-          {% if author.last == site.scholar.last_name %}
-            <em>{{author.first}} {{author.last}}</em>,
-          {% else %}
-            {% if site.data.coauthors[author.last] %}
-              <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.first}} {{author.last}}</a>,
-            {% else %}
-              {{author.first}} {{author.last}},
-            {% endif %}
-          {% endif %}
+        {% if author.last == site.scholar.last_name %}
+          <em>{{author.first}} {{author.last}}</em>,
         {% else %}
-          and
-          {% if author.last == site.scholar.last_name %}
-            <em>{{author.first}} {{author.last}}</em>
+          {% if site.data.coauthors[author.last] %}
+            <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.first}} {{author.last}}</a>,
           {% else %}
-            {% if site.data.coauthors[author.last] %}
-              <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.first}} {{author.last}}</a>
-            {% else %}
-              {{author.first}} {{author.last}}
-            {% endif %}
+            {{author.first}} {{author.last}},
           {% endif %}
-        {% endunless %}
+        {% endif %}
+        {% assign penultimate = forloop.length | minus: 1 %}
+        {% if forloop.index == penultimate %}
+          and
+        {% endif %}
       {% endfor %}
     </span>
 
