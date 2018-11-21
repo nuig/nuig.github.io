@@ -8,7 +8,7 @@ Why Jekyll? Read this [blog post](https://karpathy.github.io/2014/07/01/switchin
 
 ## Getting started
 
-This repository has two branches, `master` and `src`. As it's hosted on [GitHub](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages), the compiled (automatically generated) stuff is placed in the `master` branch. Thus, if you're going to update anything here, you should NEVER touch the `master` branch.
+This repository has two branches, `master` and `src`. As it is hosted on [GitHub](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages), the compiled (automatically generated) stuff is placed in the `master` branch. Thus, if you're going to update anything here, you should NEVER touch the `master` branch.
 
 ### Installation
 

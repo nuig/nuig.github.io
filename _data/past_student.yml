@@ -417,3 +417,15 @@ goulden:
     title: --
     supervisorIds: oriordan
     conclusionYear:
+
+skeikho:
+  - courseId: mscSoftware
+    title: Sentiment Analysis
+    supervisorIds: griffith
+    fundingIds:
+
+tarfa:
+  - courseId: mscSoftware
+    title: Recommender System
+    supervisorIds: oriordan
+    fundingIds:

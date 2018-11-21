@@ -50,20 +50,15 @@ locodi:
     supervisorIds: oriordan
     fundingIds: nuig
 
-skeikho:
-  - courseId: mscSoftware
-    title: Sentiment Analysis
-    supervisorIds: griffith
-    fundingIds:
-
-tarfa:
-  - courseId: mscSoftware
-    title: Recommender System
-    supervisorIds: oriordan
-    fundingIds:
-
 teleanca:
   - courseId: phd
     title: Evolutionary Game Theory
     supervisorIds: oriordan
     fundingIds:
+
+kelly:
+  - courseId: phd
+    title: Information Retrieval
+    supervisorIds: oriordan
+    fundingIds: disc
+
