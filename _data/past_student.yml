@@ -22,6 +22,18 @@ breen:
     supervisorIds: oriordan
     fundingIds: hardiman
 
+skeikho:
+  - courseId: mscSoftware
+    title: Sentiment Analysis
+    conclusionYear: 2018
+    supervisorIds: griffith
+
+tarfa:
+  - courseId: mscSoftware
+    title: Recommender System
+    conclusionYear: 2018
+    supervisorIds: oriordan
+
 bonney:
   - courseId: mscSoftware
     title: Evolutionary Game Theory
@@ -418,14 +430,3 @@ goulden:
     supervisorIds: oriordan
     conclusionYear:
 
-skeikho:
-  - courseId: mscSoftware
-    title: Sentiment Analysis
-    supervisorIds: griffith
-    fundingIds:
-
-tarfa:
-  - courseId: mscSoftware
-    title: Recommender System
-    supervisorIds: oriordan
-    fundingIds:
