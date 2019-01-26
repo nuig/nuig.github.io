@@ -36,7 +36,7 @@ markdown: kramdown
 highlighter: pygments
 
 # Includes & Excludes
-include: ['_pages']
+include: ['.well-known','_pages']
 exclude: ['deploy','.fuse*']
 
 # Plug-ins
