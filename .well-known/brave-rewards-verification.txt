@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: nuig.github.io
+Token: de064fe9bce8a7f9e1d55afcd250d0e5cfad00d472c7bac0a5b069d7d62db46e
