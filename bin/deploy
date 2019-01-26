@@ -79,10 +79,13 @@ bash bin/updateData
 bundle exec jekyll build
 
 # Delete and move files
-find . -maxdepth 1 ! -name 'bin' ! -name '_site' ! -name '.git' ! -name '.gitignore' -exec rm -rf {} \;
+find . -maxdepth 1 ! -name 'bin' ! -name '_site' ! -name '.git' ! -name '.well-known' ! -name '.gitignore' -exec rm -rf {} \;
 rm -rf _site/bin/ _site/data/
 mv _site/* .
 rm -R _site/
+
+# Ask GitHub to ignore the repo
+echo '' > .nojekyll
 
 # Push to DEPLOY_BRANCH
 git add -fA
