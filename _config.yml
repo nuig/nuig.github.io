@@ -58,7 +58,7 @@ scholar:
   source: /_bibliography/
   bibliography: autogen_all.bib
   bibliography_template: bib
-  repository: data
+  repository: publications
 
   # <li> for each entry will be handled by bib.html
   # we wrap them with <div class='delete-li'>

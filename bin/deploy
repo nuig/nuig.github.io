@@ -4,6 +4,7 @@
 
 # Parse cmd arguments
 
+
 SRC_BRANCH="src"
 DEPLOY_BRANCH="master"
 
@@ -72,15 +73,27 @@ then
 fi
 git checkout -b $DEPLOY_BRANCH
 
-# download data
+# Verbose mode
+set -v
+
+# Download data
 bash bin/updateData
 
 # Build site
 bundle exec jekyll build
+MSG="$(git log -1 --pretty=%B) [ci skip]"
+
+# Update publications page
+mv _site/publications/index.html publications/
+cd publications
+git add index.html
+git commit --allow-empty -m "$MSG"
+git push origin master
+cd ..
 
 # Delete and move files
 find . -maxdepth 1 ! -name 'bin' ! -name '_site' ! -name '.git' ! -name '.well-known' ! -name '.gitignore' -exec rm -rf {} \;
-rm -rf _site/bin/ _site/data/
+rm -rf _site/bin/ _site/data/ _site/publications/
 mv _site/* .
 rm -R _site/
 
@@ -89,7 +102,7 @@ echo '' > .nojekyll
 
 # Push to DEPLOY_BRANCH
 git add -fA
-git commit --allow-empty -m "$(git log -1 --pretty=%B) [ci skip]"
+git commit --allow-empty -m "$MSG"
 git push -f -q origin $DEPLOY_BRANCH
 
 # Move back to SRC_BRANCH
