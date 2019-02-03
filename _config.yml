@@ -41,6 +41,7 @@ exclude: ['deploy','.fuse*']
 
 # Plug-ins
 plugins:
+    - jekyll-sitemap
     - jekyll-email-protect
     - jekyll-paginate
     - jekyll/scholar
