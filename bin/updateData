@@ -21,7 +21,7 @@ fi
 
 git clone $DATA_REPOSITORY_URL $DATA_REPOSITORY
 
-rm $DATA_REPOSITORY/README.md
+rm $DATA_REPOSITORY/README.md $DATA_REPOSITORY/index.html
 
 echo "Updated successfully!"
 
