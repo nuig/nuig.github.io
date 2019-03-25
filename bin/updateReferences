@@ -33,7 +33,7 @@ dblp = [
 ]
 
 # ids to exclude from the final database
-black_list = ['journals_corr_abs-1811-10114']
+black_list = ['journals_corr_abs-1811-10114', 'journals_iet-com_ORiordanC12']
 
 # bibliography directory
 bibliography_dir = "_bibliography/"
