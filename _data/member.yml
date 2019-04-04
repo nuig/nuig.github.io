@@ -19,7 +19,7 @@ cardinot:
   gscholar: wuLwX_4AAAAJ
   dblp: 184/0893
   github: cardinot
-  website: http://cardinot.net
+  website: https://cardinot.net
 
 griffith:
   name: Josephine Griffith
@@ -33,11 +33,13 @@ oriordan:
   email: colm.oriordan@nuigalway.ie
   gscholar: 2qi2RgwAAAAJ
   dblp: 37/6812
+  website: http://ww2.it.nuigalway.ie/staff/colmor
 
 hill:
   name: Seamus Hill
   email: seamus.hill@nuigalway.ie
   dblp: 80/4443
+  website: https://www.researchgate.net/profile/Seamus_Hill
 
 mulvihil:
   name: Conn Mulvihil
@@ -74,6 +76,7 @@ howley:
 holland:
   name: Jane Holland
   email: j.holland3@nuigalway.ie
+  website: https://www.researchgate.net/profile/Jane_Holland6
 
 marshall:
   name: Christine Marshall
@@ -82,6 +85,7 @@ marshall:
 gibbons:
   name: Maud Gibbons
   email: m.gibbons11@nuigalway.ie
+  website: https://www.researchgate.net/profile/Maud_Gibbons
 
 locodi:
   name: Alexandru Locodi
