@@ -24,6 +24,7 @@ cardinot:
 griffith:
   name: Josephine Griffith
   email: josephine.griffith@nuigalway.ie
+  orcid: 0000-0002-1560-1867
   gscholar: MeYCar0AAAAJ
   dblp: 57/2979
   website: http://linitweb.it.nuigalway.ie/staff/griffith/home_pg.html
@@ -71,15 +72,18 @@ pasi:
 
 howley:
   name: Enda Howley
+  orcid: 0000-0003-2687-4630
   website: http://endahowley.ie
 
 holland:
   name: Jane Holland
   email: j.holland3@nuigalway.ie
+  orcid: 0000-0002-4128-149X
   website: https://www.researchgate.net/profile/Jane_Holland6
 
 marshall:
   name: Christine Marshall
+  orcid: 0000-0002-9293-0875
   email: c.marshall1@nuigalway.ie
 
 gibbons:
