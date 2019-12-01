@@ -15,12 +15,25 @@
 #     fundingIds: cnpq                  // optional.
 #     conclusionYear: 2010              // optional
 
+gibbons:
+  - courseId: phd
+    title: Promoting the evolution of cooperation in social dilemma games using contingent mobility strategies
+    conclusionYear: 2019
+    supervisorIds: oriordan griffith
+    fundingIds: hardiman
+
 breen:
   - courseId: phd
-    title: Computational intelligence in aesthetics and analogy in music and art
+    title: Art and analogy through evolutionary computation
     conclusionYear: 2018
     supervisorIds: oriordan
     fundingIds: hardiman
+
+byrne:
+  - courseId: mscSoftware
+    title: --
+    conclusionYear: 2018
+    supervisorIds: griffith
 
 skeikho:
   - courseId: mscSoftware

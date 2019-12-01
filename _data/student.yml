@@ -17,15 +17,9 @@ cardinot:
 
 holland:
   - courseId: phd
-    title: Evolving Collective Behaviours in Mobile Robots
+    title: Evolutionary Robotics Self-Organisation and Coordination
     supervisorIds: oriordan griffith
     fundingIds: disc
-
-gibbons:
-  - courseId: phd
-    title: The Co-evolution of Cooperation and Mobility in Artificial Life Societies
-    supervisorIds: oriordan griffith
-    fundingIds: hardiman
 
 sarwar:
   - courseId: phd
@@ -62,3 +56,18 @@ kelly:
     supervisorIds: oriordan
     fundingIds: disc
 
+conlin:
+  - courseId: phd
+    title: Evolutionary Computation
+    supervisorIds: oriordan
+    fundingIds: disc
+
+darra:
+  - courseId: mscCS
+    title: Auto Detection of Xenophobia in news articles
+    supervisorIds: griffith
+
+woods:
+  - courseId: mscSoftware
+    title: Automatic Detection of Hate Speech
+    supervisorIds: griffith
