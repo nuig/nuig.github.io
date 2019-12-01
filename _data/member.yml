@@ -22,7 +22,7 @@ cardinot:
   website: https://cardinot.net
 
 griffith:
-  name: Josephine Griffith
+  name: Dr Josephine Griffith
   email: josephine.griffith@nuigalway.ie
   orcid: 0000-0002-1560-1867
   gscholar: MeYCar0AAAAJ
@@ -30,37 +30,37 @@ griffith:
   website: http://linitweb.it.nuigalway.ie/staff/griffith/home_pg.html
 
 oriordan:
-  name: Colm O'Riordan
+  name: Dr Colm O'Riordan
   email: colm.oriordan@nuigalway.ie
   gscholar: 2qi2RgwAAAAJ
   dblp: 37/6812
   website: http://ww2.it.nuigalway.ie/staff/colmor
 
 hill:
-  name: Seamus Hill
+  name: Dr Seamus Hill
   email: seamus.hill@nuigalway.ie
   dblp: 80/4443
   website: https://www.researchgate.net/profile/Seamus_Hill
 
 mulvihil:
-  name: Conn Mulvihil
+  name: Dr Conn Mulvihil
   email: conn_m@it.nuigalway.ie
 
 cruickshank:
-  name: James Cruickshank
+  name: Dr James Cruickshank
   email: james.cruickshank@nuigalway.ie
   website: http://www.maths.nuigalway.ie/~jc
 
 newell:
-  name: John Newell
+  name: Dr John Newell
   email: john.newell@nuigalway.ie
   website: http://www.nuigalway.ie/our-research/people/johnnewell
 
 berthaud:
-  name: Sarah Berthaud
+  name: Dr Sarah Berthaud
 
 cummins:
-  name: Ronan Cummins
+  name: Dr Ronan Cummins
   email: ronan.cummins@cl.cam.ac.uk
   gscholar: wQEvGP0AAAAJ
   website: http://ir.dcs.gla.ac.uk/~ronanc/
