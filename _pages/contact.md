@@ -7,9 +7,9 @@ description: Contacts and directions.
 
 <div class="grid">
   <div class="grid-item">
-    <h4>Josephine Griffith</h4>
+    <h4>Dr Josephine Griffith</h4>
     <p>josephine.griffith@nuigalway.ie<br>+353 91 493717</p>
-    <h4>Colm O'Riordan</h4>
+    <h4>Dr Colm O'Riordan</h4>
     <p>colm.oriordan@nuigalway.ie<br>+353 91 493669<br></p>
   </div>
   <div class="grid-item">
